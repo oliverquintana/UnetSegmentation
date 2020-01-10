@@ -3,7 +3,7 @@ from os.path import isfile, join
 import numpy as np
 import cv2
 
-def get_images(mypath, size = 256, channels = 1):
+def get_images(mypath, size = 256):
 
     onlyfiles = [ f for f in listdir(mypath) if isfile(join(mypath,f)) ]
     onlyfiles.sort()
@@ -12,10 +12,7 @@ def get_images(mypath, size = 256, channels = 1):
 
     for n in range(len(onlyfiles)):
         images[n] = cv2.imread( join(mypath,onlyfiles[n]), 0)
-        #images[n] = cv2.resize(temp, (size, size), interpolation = cv2.INTER_AREA)
-
-    #print(len(images))
-
+        
     return images
 
 def load_data():
