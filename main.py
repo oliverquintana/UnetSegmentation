@@ -18,9 +18,6 @@ model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['mse'
 # Show model summary
 model.summary()
 
-# Load pretrained weights
-weights = model.load_weights('modelWeights.h5')
-
 # Train model
 model.fit(x_train, y_train,
           epochs = 10,
