@@ -1,10 +1,4 @@
-medpy
-nibabel
-tensorflow-gpu==2.1.0
-tensorflow-addons==0.9.1
-h5py==3.1.0
-pandas
-numpy
-sklearn
-cv2
+tensorflow>=2.0.1
 matplotlib
+numpy
+cv2
